@@ -1,0 +1,14 @@
+@import 'colors';
+@import 'media-queries';
+@import 'header';
+@import 'main';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}

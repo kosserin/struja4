@@ -1,0 +1,65 @@
+@import 'colors';
+@import 'media-queries';
+main{
+    background-color: $white;
+}
+.icons{
+    transform: translateY(-50px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    width: 70%;
+    margin: auto;
+    background: $white;
+    @include tablet{
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    }
+    @include phone{
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+        transform: translateY(0);
+    }
+    @include fold{
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+        transform: translateY(0);
+    }
+}
+.icon{
+    min-height: 130px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    & h1{
+        font-size: 1.1rem;
+        @include tablet{
+            font-size: 0.9rem;
+        }
+        @include fold{
+            font-size: 0.8rem;
+        }
+        }
+        & p{
+            font-size: 0.9rem;
+            @include tablet{
+                font-size: 0.7rem;
+            }
+            @include phone{
+                font-size: 0.9rem;
+            }
+            @include fold{
+                font-size: 0.7rem;
+            }
+    }
+& img{
+    width: 50px;
+    @include tablet{
+        width: 40px;
+    }
+    @include phone{
+        width: 35px;
+    }
+}
+}
